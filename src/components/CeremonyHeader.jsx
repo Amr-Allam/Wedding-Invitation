@@ -14,12 +14,6 @@ export function CeremonyHeader({ groom, bride }) {
       <p className="text-4xl mt-3 italic font-cursive">{groom}</p>
       <p className="text-base text-primary my-2 font-cursive">&amp;</p>
       <p className="text-4xl mb-2 italic font-cursive">{bride}</p>
-      <div className="my-8 flex items-center justify-center gap-3">
-        <span className="h-px w-12 bg-primary/40" />
-        <span className="text-primary">❦</span>
-        <span className="h-px w-12 bg-primary/40" />
-      </div>
-      <p className="text-4xl mb-2 italic font-cursive">October 8, 2026</p>
     </section>
   );
 }
