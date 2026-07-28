@@ -12,7 +12,7 @@ export default function EnvelopeIntro({ onOpen, groom, bride }) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-[#f6efe4] transition-opacity duration-700 min-h-screen bg-[url('00841_simple_floral_main.webp')] bg-cover bg-center ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-[#f6efe4] transition-opacity duration-700 min-h-screen bg-[url('/00841_simple_floral_main.webp')] bg-cover bg-center ${
         opening ? "opacity-0" : "opacity-100"
       }`}
     >
