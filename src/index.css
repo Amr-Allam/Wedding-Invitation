@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #9c4f3c;
+  --color-primary-hover: #87422f;
+  --color-secondary: #c9a98a;
+  --color-primary-background: #fbf6ec;
+  --color-primary-text: #6b5040;
+  --color-secondary-text: #8a6a55;
+
+  --font-cursive: "Edu NSW ACT Cursive", cursive;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: #f6efe4;
+    color: #4a2f26;
+    /* font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased; */
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+}
+
+@layer utilities {
+  .eq-bar {
+    height: 4px;
+    animation: eq-bounce ease-in-out infinite;
+  }
+}
+
+@keyframes eq-bounce {
+  0%,
+  100% {
+    height: 4px;
+  }
+  50% {
+    height: 16px;
+  }
+}
