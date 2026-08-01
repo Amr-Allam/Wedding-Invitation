@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Sparkles from "./Sparkles";
+import { Logo } from "./Logo";
 
-export default function EnvelopeIntro({ onOpen, groom, bride }) {
+export default function EnvelopeIntro({ onOpen }) {
   const [opening, setOpening] = useState(false);
 
   function handleClick() {
@@ -66,9 +67,7 @@ export default function EnvelopeIntro({ onOpen, groom, bride }) {
                 opening ? "scale-0 opacity-0" : "scale-100 opacity-100"
               }`}
             >
-              <span className="font-serif text-xl">
-                {groom[0]}&amp;{bride[0]}
-              </span>
+              <Logo size={45} className="text-white mx-auto font-bold" />
             </div>
 
             {/* Envelope flap (triangle) */}

@@ -16,7 +16,7 @@ export function CalendarCard({ date }) {
   const dayLabel = date.getDate();
 
   return (
-    <section className="mb-14">
+    <section className="mb-8 mx-3">
       <div className="bg-primary-background border border-secondary/50 rounded-lg px-4 py-5">
         <p className="text-center text-[15px] mb-4">{monthLabel}</p>
 

@@ -10,9 +10,8 @@ import {
 } from "./config";
 import { useSongToggle } from "./hooks/useSongToggle";
 
-import { CeremonyHeader } from "./components/CeremonyHeader";
+import { Hero } from "./components/Hero";
 import { InfoSection } from "./components/InfoSection";
-import { Countdown } from "./components/Countdown";
 import { CalendarCard } from "./components/CalendarCard";
 import { Venue } from "./components/Venue";
 import { MusicToggle } from "./components/MusicToggle";
@@ -46,7 +45,7 @@ export default function WeddingInvite() {
 
   return (
     <div
-      className={`relative min-h-screen bg-[#f6efe4] text-[#4a2f26] transition-opacity duration-1000 bg-[url('/00841_simple_floral_main.webp')] bg-cover bg-center ${
+      className={`relative min-h-screen bg-[#f6efe4] text-[#4a2f26] transition-opacity duration-1000 bg-[url('/00841_simple_floral_main.webp')] bg-cover bg-center py-6 flex justify-center ${
         showInvite ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -54,20 +53,28 @@ export default function WeddingInvite() {
       <div className="absolute inset-0 bg-[#f6efe4]/85" />
 
       <Sparkles color="#9c4f3c" />
-      <div className="relative max-w-120 mx-auto px-6 pt-14 pb-10">
-        <CeremonyHeader groom={GROOM} bride={BRIDE} />
-        <InfoSection groom={GROOM} bride={BRIDE} date={WEDDING_DATE} />
-        <Countdown date={WEDDING_DATE} />
-        <CalendarCard date={WEDDING_DATE} />
-        <Venue
-          name={VENUE_NAME}
-          address={VENUE_ADDRESS}
-          mapsUrl={VENUE_MAPS_URL}
-        />
 
-        <section className="text-center pt-6 border-t border-secondary/50">
-          <p className="text-lg italic">Thank you</p>
-        </section>
+      <div className="relative max-w-120 mx-3 pb-10 rounded-4xl bg-white/85 shadow-xl w-full overflow-hidden">
+        <Hero date={WEDDING_DATE} />
+        <div>
+          <img
+            src="/bottom.webp"
+            alt="Wedding Background"
+            className="absolute max-w-none -left-40 w-250 bottom-0 opacity-10 z-0"
+          />
+
+          <InfoSection groom={GROOM} bride={BRIDE} date={WEDDING_DATE} />
+          <CalendarCard date={WEDDING_DATE} />
+          <Venue
+            name={VENUE_NAME}
+            address={VENUE_ADDRESS}
+            mapsUrl={VENUE_MAPS_URL}
+          />
+
+          <section className="text-center pt-6 border-t border-secondary/50">
+            <p className="text-lg italic">Thank you</p>
+          </section>
+        </div>
       </div>
 
       <MusicToggle playing={playing} toggle={toggle} />
