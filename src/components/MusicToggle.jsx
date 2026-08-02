@@ -9,7 +9,7 @@ const BARS = [
 
 export function MusicToggle({ playing, toggle }) {
   return (
-    <div className="fixed bottom-6 right-6 flex items-center justify-center">
+    <div className="fixed bottom-6 right-6 flex items-center justify-center z-20">
       {/* Breathing halo, only visible while playing */}
       {playing && (
         <>
