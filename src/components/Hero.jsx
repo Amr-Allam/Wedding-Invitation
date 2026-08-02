@@ -3,21 +3,23 @@ import { Countdown } from "./Countdown";
 
 export function Hero({ date }) {
   return (
-    <section className="relative min-h-dvh ">
-      <img
-        src="/top-flower.webp"
-        alt="Wedding Background"
-        className="absolute top-5 -right-35 sm:-right-40 -rotate-25 w-90 xs:w-100 sm:w-120 max-w-none"
-      />
-      <div className="relative z-10 flex flex-col items-center px-6 text-center">
-        <p className="text-md tracking-[0.3em] uppercase text-primary mb-10 pt-10">
+    <section className="relative min-h-svh ">
+      <div className="relative z-10 text-center flex flex-col min-h-svh pb-5">
+        <p className="text-md tracking-[0.3em] uppercase text-primary pt-10 flex-1 max-h-100">
           Katb Ketab Ceremony
         </p>
 
-        <div className="absolute top-100 left-2 sm:left-10">
-          <Logo size={250} className="text-primary mb-10" />
+        <div className="relative">
+          <img
+            src="/top-flower.webp"
+            alt="Wedding Background"
+            className="absolute -top-100 xs:-top-105 -right-35 sm:-right-35 -rotate-25 w-90 xs:w-100 max-w-none"
+          />
+          <div className="flex flex-col items-center justify-center max-w-62.5 xs:pl-25">
+            <Logo className="text-primary mb-10 h-50 w-50 xs:h-62.5 xs:w-62.5" />
 
-          <Countdown date={date} />
+            <Countdown date={date} />
+          </div>
         </div>
       </div>
     </section>

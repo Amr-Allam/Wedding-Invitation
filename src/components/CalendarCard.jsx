@@ -20,7 +20,7 @@ export function CalendarCard({ date }) {
       <div className="bg-primary-background border border-secondary/50 rounded-lg px-4 py-5">
         <p className="text-center text-[15px] mb-4">{monthLabel}</p>
 
-        <div className="grid grid-cols-7 gap-1.5 text-xs text-center text-secondary-text mb-1.5">
+        <div className="grid grid-cols-7 gap-1.5 text-xs text-center text-tertiary/80 mb-1.5">
           {WEEKDAYS.map((d) => (
             <div key={d}>{d}</div>
           ))}

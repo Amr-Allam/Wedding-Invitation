@@ -7,12 +7,12 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #9c4f3c;
-  --color-primary-hover: #87422f;
+  --color-primary: #95644b;
   --color-secondary: #c9a98a;
+  --color-tertiary: #553725;
+
   --color-primary-background: #fbf6ec;
-  --color-primary-text: #6b5040;
-  --color-secondary-text: #8a6a55;
+  --color-secondary-background: #f6efe4;
 
   --font-cursive: "Imperial Script", cursive;
 
@@ -22,7 +22,7 @@
 
 @layer base {
   :root {
-    color-scheme: light;
+    color-scheme: only light;
   }
 
   html,

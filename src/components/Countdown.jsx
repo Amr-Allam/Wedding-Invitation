@@ -12,14 +12,16 @@ export function Countdown({ date }) {
 
   return (
     <section className="text-center mb-14">
-      <p className="text-xs tracking-[0.2em] uppercase text-primary mb-4">
+      <p className="text-xs tracking-[0.2em] uppercase text-tertiary mb-4">
         Countdown
       </p>
       <div className="flex justify-center gap-5">
         {units.map(([label, val]) => (
           <div key={label}>
-            <div className="text-2xl">{String(val).padStart(2, "0")}</div>
-            <div className="text-[11px] tracking-widest uppercase text-secondary-text">
+            <div className="text-2xl text-secondary">
+              {String(val).padStart(2, "0")}
+            </div>
+            <div className="text-[11px] tracking-widest uppercase text-tertiary">
               {label}
             </div>
           </div>

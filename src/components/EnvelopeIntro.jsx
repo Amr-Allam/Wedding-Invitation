@@ -13,44 +13,14 @@ export default function EnvelopeIntro({ onOpen }) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-[#f6efe4] transition-opacity duration-700 min-h-screen bg-[url('/00841_simple_floral_main.webp')] bg-cover bg-center ${
+      className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-700 min-h-screen bg-[url('/00841_simple_floral_main.webp')] bg-cover bg-center ${
         opening ? "opacity-0" : "opacity-100"
       }`}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#f6efe4]/85" />
+      <div className="absolute inset-0 bg-secondary-background/85" />
 
-      <Sparkles color="#9c6b52" />
-
-      {/* Soft pattern hint */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.05]">
-        <svg
-          className="h-full w-full"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern
-              id="intro-floral"
-              x="0"
-              y="0"
-              width="100"
-              height="100"
-              patternUnits="userSpaceOnUse"
-            >
-              <g fill="none" stroke="#9c6b52" strokeWidth="0.8">
-                <circle cx="50" cy="50" r="6" />
-                <circle cx="50" cy="35" r="4" />
-                <circle cx="50" cy="65" r="4" />
-                <circle cx="35" cy="50" r="4" />
-                <circle cx="65" cy="50" r="4" />
-                <path d="M50 44 L50 35 M50 56 L50 65 M44 50 L35 50 M56 50 L65 50" />
-              </g>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#intro-floral)" />
-        </svg>
-      </div>
+      <Sparkles color="#9c4f3c" />
 
       <div className="relative z-10 flex flex-col items-center perspective-midrange">
         {/* Envelope */}
@@ -63,11 +33,11 @@ export default function EnvelopeIntro({ onOpen }) {
           <div className="relative h-48 w-72 overflow-visible rounded-lg border border-[#9c6b52]/20 bg-white shadow-xl transition-transform duration-500 group-hover:-translate-y-1 sm:h-56 sm:w-96">
             {/* Wax seal */}
             <div
-              className={`absolute left-1/2 top-1/2 z-20 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#9c6b52] text-white shadow-md transition-all duration-500 ${
+              className={`absolute left-1/2 top-1/2 z-20 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary text-white shadow-md transition-all duration-500 ${
                 opening ? "scale-0 opacity-0" : "scale-100 opacity-100"
               }`}
             >
-              <Logo size={45} className="text-white mx-auto font-bold" />
+              <Logo size={45} className="text-white mx-auto font-bold mr-2.5" />
             </div>
 
             {/* Envelope flap (triangle) */}

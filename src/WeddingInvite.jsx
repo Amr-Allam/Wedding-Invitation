@@ -45,16 +45,16 @@ export default function WeddingInvite() {
 
   return (
     <div
-      className={`relative min-h-screen bg-[#f6efe4] text-[#4a2f26] transition-opacity duration-1000 bg-[url('/00841_simple_floral_main.webp')] bg-cover bg-center py-6 flex justify-center ${
+      className={`relative min-h-screen bg-primary-background text-[#4a2f26] transition-opacity duration-1000 bg-[url('/00841_simple_floral_main.webp')] bg-cover bg-center flex justify-center ${
         showInvite ? "opacity-100" : "opacity-0"
       }`}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#f6efe4]/85" />
+      <div className="absolute inset-0 bg-white/85" />
 
       <Sparkles color="#9c4f3c" />
 
-      <div className="relative max-w-120 mx-3 pb-10 rounded-4xl bg-white/85 shadow-xl w-full overflow-hidden">
+      <div className="relative max-w-120 pb-10 bg-secondary-background shadow-xl w-full overflow-hidden">
         <Hero date={WEDDING_DATE} />
         <div>
           <img
