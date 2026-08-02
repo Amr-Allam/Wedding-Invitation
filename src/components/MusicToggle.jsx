@@ -25,8 +25,8 @@ export function MusicToggle({ playing, toggle }) {
         onClick={toggle}
         aria-label={playing ? "Mute music" : "Play music"}
         className="relative w-12 h-12 rounded-full text-white flex items-center justify-center
-                  bg-linear-to-br from-primary to-secondary
-                  hover:from-primary hover:to-tertiary
+                  bg-linear-to-br from-primary to-tertiary
+                  hover:from-primary hover:to-secondary
                   shadow-[0_4px_16px_rgba(156,79,60,0.45)]
                   hover:shadow-[0_6px_20px_rgba(156,79,60,0.55)]
                   transition duration-300 cursor-pointer"

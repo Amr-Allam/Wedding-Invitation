@@ -28,11 +28,10 @@ export function InfoSection({ groom, bride, date }) {
       <div className="mt-8 my-3 flex items-center justify-center gap-3">
         <span className="h-px w-20 bg-linear-to-r from-transparent to-tertiary/40" />
         <Calendar size={20} className="text-tertiary" />
-        {/* <span className="text-tertiary">❦</span> */}
         <span className="h-px w-20 bg-linear-to-l from-transparent to-tertiary/40" />
       </div>
 
-      <div className="flex items-center justify-center mb-1 text-secondary">
+      <div className="flex items-center justify-center mb-1 text-secondary mr-4">
         <span className="px-4 text-xl" style={{ letterSpacing: "0.08em" }}>
           {weekdayLabel}
         </span>
@@ -54,7 +53,7 @@ export function InfoSection({ groom, bride, date }) {
       </p>
 
       <p className="text-xs tracking-[0.2em] uppercase text-tertiary">at</p>
-      <p className="text-base text-secondary mt-1">{timeLabel}</p>
+      <p className="text-secondary mt-1 text-xl">{timeLabel}</p>
     </section>
   );
 }

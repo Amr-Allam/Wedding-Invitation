@@ -11,7 +11,7 @@ export function Countdown({ date }) {
   ];
 
   return (
-    <section className="text-center mb-14">
+    <section className="text-center mb-14 ml-10">
       <p className="text-xs tracking-[0.2em] uppercase text-tertiary mb-4">
         Countdown
       </p>

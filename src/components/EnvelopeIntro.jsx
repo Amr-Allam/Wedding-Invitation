@@ -61,28 +61,15 @@ export default function EnvelopeIntro({ onOpen }) {
 
             {/* Bottom triangles */}
             <svg
-              className="absolute bottom-0 left-0 h-1/2 w-1/2"
-              viewBox="0 0 192 112"
+              className="absolute inset-0 h-full w-full transition-transform duration-700 rotate-180"
+              viewBox="0 0 384 224"
               preserveAspectRatio="none"
             >
               <polygon
-                points="0,112 192,112 0,0"
-                fill="#f9f6f0"
+                points="0,0 384,0 192,112"
+                fill="#fdfbf7"
                 stroke="#9c6b52"
-                strokeOpacity="0.15"
-                strokeWidth="1"
-              />
-            </svg>
-            <svg
-              className="absolute bottom-0 right-0 h-1/2 w-1/2"
-              viewBox="0 0 192 112"
-              preserveAspectRatio="none"
-            >
-              <polygon
-                points="0,112 192,112 192,0"
-                fill="#f9f6f0"
-                stroke="#9c6b52"
-                strokeOpacity="0.15"
+                strokeOpacity="0.2"
                 strokeWidth="1"
               />
             </svg>

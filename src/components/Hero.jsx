@@ -5,7 +5,7 @@ export function Hero({ date }) {
   return (
     <section className="relative min-h-svh ">
       <div className="relative z-10 text-center flex flex-col min-h-svh pb-5">
-        <p className="text-md tracking-[0.3em] uppercase text-primary pt-10 flex-1 max-h-100">
+        <p className="text-sm tracking-[0.3em] uppercase text-primary pt-30 flex-1 max-h-100 pr-35">
           Katb Ketab Ceremony
         </p>
 

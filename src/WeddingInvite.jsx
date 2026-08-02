@@ -71,8 +71,8 @@ export default function WeddingInvite() {
             mapsUrl={VENUE_MAPS_URL}
           />
 
-          <section className="text-center pt-6 border-t border-secondary/50">
-            <p className="text-lg italic">Thank you</p>
+          <section className="text-center pt-6 border-t border-tertiary/50">
+            <p className="text-3xl text-tertiary font-cursive">Thank you</p>
           </section>
         </div>
       </div>

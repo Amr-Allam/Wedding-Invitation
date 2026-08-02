@@ -17,7 +17,7 @@ export function CalendarCard({ date }) {
 
   return (
     <section className="mb-8 mx-3">
-      <div className="bg-primary-background border border-secondary/50 rounded-lg px-4 py-5">
+      <div className="bg-primary-background border border-tertiary/50 rounded-lg px-4 py-5">
         <p className="text-center text-[15px] mb-4">{monthLabel}</p>
 
         <div className="grid grid-cols-7 gap-1.5 text-xs text-center text-tertiary/80 mb-1.5">
